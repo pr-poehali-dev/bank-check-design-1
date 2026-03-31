@@ -41,13 +41,13 @@ export default function CheckBody({
         {/* Amount box */}
         <div
           style={{
-            border: "2px solid #1a4a7a",
+            border: "2px solid #5a4a30",
             display: "flex",
             alignItems: "center",
             padding: "4px 10px 4px 8px",
             minWidth: "138px",
             gap: "4px",
-            background: "rgba(180,210,240,0.4)",
+            background: "rgba(220,210,185,0.5)",
             flexShrink: 0,
             marginBottom: "1px",
           }}
@@ -149,17 +149,17 @@ export default function CheckBody({
         </div>
       </div>
 
-      <div style={{ height: "1px", background: "#a8c4e0" }} />
+      <div style={{ height: "1px", background: "#ddd5c0" }} />
 
       {/* MICR LINE */}
       <div
         style={{
-          background: "rgba(180,210,240,0.35)",
+          background: "rgba(220,210,185,0.35)",
           padding: "10px 28px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          borderTop: "1px solid #a8c4e0",
+          borderTop: "1px solid #ddd5c0",
           position: "relative",
           zIndex: 2,
           margin: "0 -28px",

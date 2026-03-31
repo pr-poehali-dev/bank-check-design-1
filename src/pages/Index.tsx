@@ -73,8 +73,8 @@ export default function Index() {
         style={{
           width: "100%",
           maxWidth: "800px",
-          background: "#deeaf7",
-          border: "1px solid #a8c4e0",
+          background: "#faf7f0",
+          border: "1px solid #ddd5c0",
           boxShadow: "0 8px 48px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.08)",
           position: "relative",
           overflow: "hidden",
@@ -87,8 +87,8 @@ export default function Index() {
           style={{
             height: "5px",
             background:
-              "repeating-linear-gradient(90deg, #1a4a7a 0, #1a4a7a 6px, transparent 6px, transparent 10px)",
-            opacity: 0.3,
+              "repeating-linear-gradient(90deg, #5a4a30 0, #5a4a30 6px, transparent 6px, transparent 10px)",
+            opacity: 0.2,
             position: "relative",
             zIndex: 2,
           }}
@@ -103,7 +103,7 @@ export default function Index() {
             ...MICR,
             fontSize: "16px",
             fontWeight: 700,
-            color: "#1a4a7a",
+            color: "#5a4a30",
             zIndex: 3,
           }}
         >
@@ -115,7 +115,7 @@ export default function Index() {
           <CheckHeader date={date} onDateChange={setDate} />
 
           {/* Thin rule */}
-          <div style={{ height: "1px", background: "#a8c4e0", marginBottom: "16px" }} />
+          <div style={{ height: "1px", background: "#ddd5c0", marginBottom: "16px" }} />
 
           <CheckBody
             payee={payee} onPayeeChange={setPayee}
@@ -130,8 +130,8 @@ export default function Index() {
           style={{
             height: "5px",
             background:
-              "repeating-linear-gradient(90deg, #1a4a7a 0, #1a4a7a 6px, transparent 6px, transparent 10px)",
-            opacity: 0.25,
+              "repeating-linear-gradient(90deg, #5a4a30 0, #5a4a30 6px, transparent 6px, transparent 10px)",
+            opacity: 0.15,
             position: "relative",
             zIndex: 2,
           }}
