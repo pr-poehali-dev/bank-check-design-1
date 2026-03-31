@@ -153,6 +153,19 @@ export default function Index() {
               <div
                 style={{
                   fontFamily: "'IBM Plex Sans', sans-serif",
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  color: "#1a1510",
+                  letterSpacing: "0.06em",
+                  textTransform: "uppercase",
+                  marginBottom: "6px",
+                }}
+              >
+                Rep.Find
+              </div>
+              <div
+                style={{
+                  fontFamily: "'IBM Plex Sans', sans-serif",
                   fontSize: "18px",
                   fontWeight: 700,
                   color: "#1a1510",
@@ -253,7 +266,7 @@ export default function Index() {
                   lineHeight: 1,
                 }}
               >
-                $
+                ₽
               </span>
               <input
                 type="text"
@@ -306,7 +319,7 @@ export default function Index() {
                 flexShrink: 0,
               }}
             >
-              Dollars
+              Рублей
             </span>
           </div>
 
