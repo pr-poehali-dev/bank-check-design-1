@@ -32,8 +32,8 @@ const LINE_INPUT: React.CSSProperties = {
 };
 
 const CHECK_NO = "4471";
-const ROUTING = "БИК 044525225";
-const ACCOUNT = "К/С 30101810400000000225";
+const ROUTING = "BIC 044525225";
+const ACCOUNT = "Corr. 30101810400000000225";
 
 export default function Index() {
   const [payee, setPayee] = useState("");
@@ -173,7 +173,7 @@ export default function Index() {
                   textTransform: "uppercase",
                 }}
               >
-                Сбербанк России
+                Sberbank of Russia
               </div>
               <div
                 style={{
@@ -185,11 +185,11 @@ export default function Index() {
                   marginTop: "2px",
                 }}
               >
-                ПАО «Сбербанк»
+                PJSC Sberbank
                 <br />
-                117312, г. Москва, ул. Вавилова, д. 19
+                19 Vavilova St., Moscow, 117312, Russia
                 <br />
-                Лицензия ЦБ РФ № 1481&nbsp;&nbsp;|&nbsp;&nbsp;БИК 044525225
+                CBR License No. 1481&nbsp;&nbsp;|&nbsp;&nbsp;BIC 044525225
               </div>
             </div>
 
@@ -319,7 +319,7 @@ export default function Index() {
                 flexShrink: 0,
               }}
             >
-              Рублей
+              Rubles
             </span>
           </div>
 
@@ -404,9 +404,9 @@ export default function Index() {
               lineHeight: 1.8,
             }}
           >
-            <span style={{ textTransform: "uppercase", fontWeight: 600 }}>БИК</span>&nbsp;&nbsp;044525225
+            <span style={{ textTransform: "uppercase", fontWeight: 600 }}>BIC</span>&nbsp;&nbsp;044525225
             <br />
-            <span style={{ textTransform: "uppercase", fontWeight: 600 }}>К/С</span>&nbsp;&nbsp;30101810400000000225
+            <span style={{ textTransform: "uppercase", fontWeight: 600 }}>Corr. Acc.</span>&nbsp;&nbsp;30101810400000000225
           </div>
         </div>
 
