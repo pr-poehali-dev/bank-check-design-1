@@ -32,8 +32,8 @@ const LINE_INPUT: React.CSSProperties = {
 };
 
 const CHECK_NO = "4471";
-const ROUTING = "⑆ 071000013 ⑆";
-const ACCOUNT = "⑇ 123456789 ⑇";
+const ROUTING = "БИК 044525225";
+const ACCOUNT = "К/С 30101810400000000225";
 
 export default function Index() {
   const [payee, setPayee] = useState("");
@@ -173,7 +173,7 @@ export default function Index() {
                   textTransform: "uppercase",
                 }}
               >
-                First National Bank
+                Сбербанк России
               </div>
               <div
                 style={{
@@ -185,11 +185,11 @@ export default function Index() {
                   marginTop: "2px",
                 }}
               >
-                of America, N.A.
+                ПАО «Сбербанк»
                 <br />
-                1200 Federal Reserve Blvd • New York, NY 10001
+                117312, г. Москва, ул. Вавилова, д. 19
                 <br />
-                Member FDIC&nbsp;&nbsp;|&nbsp;&nbsp;Equal Housing Lender
+                Лицензия ЦБ РФ № 1481&nbsp;&nbsp;|&nbsp;&nbsp;БИК 044525225
               </div>
             </div>
 
@@ -404,9 +404,9 @@ export default function Index() {
               lineHeight: 1.8,
             }}
           >
-            <span style={{ textTransform: "uppercase", fontWeight: 600 }}>Routing</span>&nbsp;&nbsp;071-000-013
+            <span style={{ textTransform: "uppercase", fontWeight: 600 }}>БИК</span>&nbsp;&nbsp;044525225
             <br />
-            <span style={{ textTransform: "uppercase", fontWeight: 600 }}>Account</span>&nbsp;&nbsp;123456789
+            <span style={{ textTransform: "uppercase", fontWeight: 600 }}>К/С</span>&nbsp;&nbsp;30101810400000000225
           </div>
         </div>
 
