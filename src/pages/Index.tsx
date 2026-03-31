@@ -104,20 +104,65 @@ export default function Index() {
         style={{
           width: "100%",
           maxWidth: "800px",
-          background: "#f8f4eb",
-          border: "1px solid #c5bfb0",
+          background: "#deeaf7",
+          border: "1px solid #a8c4e0",
           boxShadow: "0 8px 48px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.08)",
           position: "relative",
           overflow: "hidden",
         }}
       >
+        {/* Horizontal security lines */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: "repeating-linear-gradient(180deg, transparent 0px, transparent 11px, rgba(100,160,220,0.18) 11px, rgba(100,160,220,0.18) 12px)",
+          pointerEvents: "none",
+          zIndex: 0,
+        }} />
+
+        {/* Watermark */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          pointerEvents: "none",
+          zIndex: 1,
+        }}>
+          <div style={{
+            fontFamily: "'IBM Plex Sans', sans-serif",
+            fontSize: "88px",
+            fontWeight: 900,
+            color: "rgba(100,160,220,0.09)",
+            textTransform: "uppercase",
+            letterSpacing: "0.18em",
+            transform: "rotate(-28deg)",
+            userSelect: "none",
+            whiteSpace: "nowrap",
+          }}>
+            VOID · VOID · VOID
+          </div>
+        </div>
+
+        {/* Diagonal micro-pattern */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: "repeating-linear-gradient(45deg, rgba(100,160,220,0.07) 0px, rgba(100,160,220,0.07) 1px, transparent 1px, transparent 8px)",
+          pointerEvents: "none",
+          zIndex: 0,
+        }} />
+
         {/* Security stripe top */}
         <div
           style={{
             height: "5px",
             background:
-              "repeating-linear-gradient(90deg, #2a2520 0, #2a2520 6px, transparent 6px, transparent 10px)",
-            opacity: 0.15,
+              "repeating-linear-gradient(90deg, #1a4a7a 0, #1a4a7a 6px, transparent 6px, transparent 10px)",
+            opacity: 0.3,
+            position: "relative",
+            zIndex: 2,
           }}
         />
 
@@ -130,14 +175,15 @@ export default function Index() {
             ...MICR,
             fontSize: "16px",
             fontWeight: 700,
-            color: "#2a2520",
+            color: "#1a4a7a",
+            zIndex: 3,
           }}
         >
           {CHECK_NO}
         </div>
 
         {/* MAIN CONTENT */}
-        <div style={{ padding: "20px 28px 0 28px" }}>
+        <div style={{ padding: "20px 28px 0 28px", position: "relative", zIndex: 2 }}>
 
           {/* ROW 1 — Bank + Date */}
           <div
@@ -221,7 +267,7 @@ export default function Index() {
 
           {/* Thin rule */}
           <div
-            style={{ height: "1px", background: "#d0c8b8", marginBottom: "16px" }}
+            style={{ height: "1px", background: "#a8c4e0", marginBottom: "16px" }}
           />
 
           {/* ROW 2 — Pay to + $ box */}
@@ -246,13 +292,13 @@ export default function Index() {
             {/* Amount box */}
             <div
               style={{
-                border: "2px solid #2a2520",
+                border: "2px solid #1a4a7a",
                 display: "flex",
                 alignItems: "center",
                 padding: "4px 10px 4px 8px",
                 minWidth: "138px",
                 gap: "4px",
-                background: "#ede8db",
+                background: "rgba(180,210,240,0.4)",
                 flexShrink: 0,
                 marginBottom: "1px",
               }}
@@ -358,19 +404,21 @@ export default function Index() {
           </div>
 
           <div
-            style={{ height: "1px", background: "#d0c8b8" }}
+            style={{ height: "1px", background: "#a8c4e0" }}
           />
         </div>
 
         {/* MICR LINE */}
         <div
           style={{
-            background: "#ede8db",
+            background: "rgba(180,210,240,0.35)",
             padding: "10px 28px",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            borderTop: "1px solid #d0c8b8",
+            borderTop: "1px solid #a8c4e0",
+            position: "relative",
+            zIndex: 2,
           }}
         >
           <div
@@ -415,8 +463,10 @@ export default function Index() {
           style={{
             height: "5px",
             background:
-              "repeating-linear-gradient(90deg, #2a2520 0, #2a2520 6px, transparent 6px, transparent 10px)",
-            opacity: 0.1,
+              "repeating-linear-gradient(90deg, #1a4a7a 0, #1a4a7a 6px, transparent 6px, transparent 10px)",
+            opacity: 0.25,
+            position: "relative",
+            zIndex: 2,
           }}
         />
       </div>
